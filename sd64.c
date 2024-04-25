@@ -9,8 +9,9 @@ int main() {
     console_init();
 	/* This will initialize the SD filesystem using 'sd:/' to identify it */
 	if (!debug_init_sdfs("sd:/", -1)) {
-		debugf("Error opening SD\n");
-        printf("Error opening SD\n");
+		// debugf not necessary, printf will show the message on the emulator screen and the console.
+        // debugf("Error opening SD, you must run this on real hardware with an Everdrive attached.\n \n");
+        printf("Error opening SD, you must run this on real hardware with\nan Everdrive attached.\n");
         exit(1);
 	}
     dir_t dir;
