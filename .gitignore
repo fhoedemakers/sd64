@@ -30,7 +30,7 @@ fh.log
 *.lib
 
 # Executables
-*.exe
+#*.exe
 *.out
 *.app
 
